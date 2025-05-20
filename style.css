@@ -102,3 +102,15 @@ body {
     width: 250px;
     color: black;
   }
+
+  .login {
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+  }
+
+  .signup {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+  }
