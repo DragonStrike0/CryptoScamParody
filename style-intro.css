@@ -2,10 +2,19 @@
     margin: auto;
     background-color: #4c5ad0;
     border-radius: 10px;
-    color: #63b2e2;
+    color: white; 
     padding: 15px 32px;
     text-align: center;
     display: inline-block;
     font-size: 30px;
     cursor: pointer;
+}
+
+body {
+    background-color: #63b2e2;
+    text-align: center;
+    padding-top: 20%;
+    display: flex;
+    position : relative;
+    align-items: center;
 }
