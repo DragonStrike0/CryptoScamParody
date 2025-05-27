@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Airdrop EFREICOIN</title>
+    <link rel="stylesheet" href="style-airdrop.css" />
+</head>
+<body>
+<header>
+    <a href="landing_page.html">
+        <img src="/assets/Chouette-Logo.jpg.png" alt="EFREICOIN logo" />
+    </a>
+    <h1>Recevez vos EFREICOIN gratuitement !</h1>
+    <div id="crypto-portfolio" class="crypto-portfolio">
+        <h3>Portfolio Crypto</h3>
+        <ul>
+            <li>EFREICOIN : <span id="efrei-amount">0</span></li>
+        </ul>
+        <button id="withdraw-btn" style="display:none; margin-top:10px;">Withdraw</button>
+    </div>
+</header>
+<main>
+    <section class="airdrop-container">
+        <p>Participez à notre airdrop exclusif et recevez vos EFREICOIN gratuitement. Remplissez le formulaire ci-dessous pour commencer!</p>
+        <form class="airdrop-form" onsubmit="handleAirdropSubmit(event)">
+            <label for="name">Nom :</label>
+            <input type="text" id="name" name="name" placeholder="Votre nom" required />
+
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" placeholder="Votre email" required />
+
+            <label for="wallet">Adresse de portefeuille :</label>
+            <input type="text" id="wallet" name="wallet" placeholder="0x23429" required />
+
+            <button type="submit">Recevoir mes EFREICOIN (payez 1000$)</button>
+        </form>
+    </section>
+</main>
+<footer>
+    <div class="social-media">
+        <h2>Suivez-nous</h2>
+        <a href="https://www.instagram.com" class="social-icon"><i class="fab fa-instagram"></i> Instagram</a>
+        <a href="https://www.facebook.com" class="social-icon"><i class="fab fa-facebook"></i> Facebook</a>
+        <a href="https://www.twitter.com" class="social-icon"><i class="fab fa-twitter"></i> Twitter</a>
+    </div>
+    <p>&copy; 2025 EFREI CRYPTO. Tous droits réservés.</p>
+</footer>
+<script src="js/airdrop.js"></script>
+</body>
+</html>

@@ -1,0 +1,175 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(45deg, #63b2e2, #4c5ad0, #191970, #00eaff);
+    background-size: 400% 400%;
+    animation: gradient-animation 8s ease infinite;
+    color: #fff;
+    text-align: center;
+}
+
+@keyframes gradient-animation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* HEADER */
+header {
+    background: rgba(76, 90, 208, 0.95);
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+header img {
+    height: 60px;
+    filter: drop-shadow(0 0 10px #00eaff);
+    transition: transform 0.3s;
+}
+header img:hover {
+    transform: scale(1.1) rotate(-5deg);
+}
+header h1 {
+    flex: 1;
+    font-size: 2.2rem;
+    margin: 0 30px;
+    text-shadow: 0 0 10px #fff700, 0 0 20px #00eaff80;
+}
+.crypto-portfolio {
+    background: rgba(255,255,255,0.9);
+    color: #2d3a4a;
+    border-radius: 15px;
+    box-shadow: 0 0 20px #00eaff80;
+    padding: 20px 30px;
+    min-width: 220px;
+    margin-left: 20px;
+    text-align: left;
+}
+.crypto-portfolio h3 {
+    color: #4c5ad0;
+    margin-top: 0;
+}
+.crypto-portfolio ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 10px 0;
+}
+.crypto-portfolio li {
+    font-size: 1.1rem;
+    margin-bottom: 6px;
+}
+#withdraw-btn {
+    width: 100%;
+    padding: 10px;
+    background: linear-gradient(90deg, #00eaff, #4c5ad0);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 0 20px #00eaff80;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+#withdraw-btn:hover {
+    background: linear-gradient(90deg, #fff700, #00eaff);
+    transform: scale(1.05);
+}
+
+/* FORMULAIRE AIRDROP */
+.airdrop-container {
+    background: rgba(255,255,255,0.9);
+    padding: 35px 25px 30px 25px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px #00eaff80;
+    width: 100%;
+    max-width: 420px;
+    margin: 50px auto 30px auto;
+    text-align: center;
+    animation: fade-in 1.5s ease;
+}
+@keyframes fade-in {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.airdrop-container p {
+    color: #4c5ad0;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.airdrop-form label {
+    display: block;
+    font-weight: bold;
+    color: #4c5ad0;
+    margin-bottom: 5px;
+    text-align: left;
+}
+.airdrop-form input {
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    border: 2px solid #00eaff;
+    border-radius: 8px;
+    background: #f8fafc;
+    color: #2d3a4a;
+    font-size: 16px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+.airdrop-form input:focus {
+    border-color: #fff700;
+    box-shadow: 0 0 10px #fff700;
+    outline: none;
+}
+.airdrop-form button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(90deg, #00eaff, #4c5ad0);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 0 20px #00eaff80;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+.airdrop-form button[type="submit"]:hover {
+    background: linear-gradient(90deg, #fff700, #00eaff);
+    transform: scale(1.05);
+}
+
+/* FOOTER */
+footer {
+    margin-top: 40px;
+    padding: 20px 0;
+    background: rgba(76, 90, 208, 0.85);
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    box-shadow: 0 -4px 20px #00eaff40;
+    border-radius: 20px 20px 0 0;
+}
+.social-media {
+    margin-bottom: 10px;
+}
+.social-media h2 {
+    margin: 0 0 10px 0;
+    color: #fff700;
+    text-shadow: 0 0 10px #fff700, 0 0 20px #00eaff80;
+}
+.social-icon {
+    color: #00eaff;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 10px;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+.social-icon:hover {
+    color: #fff700;
+    text-shadow: 0 0 10px #fff700;
+}

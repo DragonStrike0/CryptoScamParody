@@ -1,0 +1,34 @@
+body {
+    margin: 0;
+    background-color: #121212;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+h1 {
+    font-size: 6rem;
+    margin: 0;
+}
+
+p {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    color: #aaaaaa;
+}
+
+a {
+    margin-top: 2rem;
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    transition: background-color 0.3s, color 0.3s;
+}
